@@ -221,7 +221,7 @@ void MainWindow::on_start()
                    "<a href='mailto:muhammadmoustafa22@gmail.com'>muhammadmoustafa22@gmail.com</a><br><br>"
                    "If you want to have fun you may visit<br>"
                    "<a href='https://www.facebook.com/Cartera11/?ref=br_rs'>https://www.facebook.com/Cartera11/?ref=br_rs</a><br><br><br>"
-                   "For more updates please visit <a href='https://github.com/MuhammadMoustafa/Pdf'>https://github.com/MuhammadMoustafa/Pdf</a><br><br><br>"
+                   "For more updates please visit <a href='https://github.com/MuhammadMoustafa/PDFetos'>https://github.com/MuhammadMoustafa/PDFetos</a><br><br><br>"
                    "Your Current Verion is 1.01 .... Released On Novemver 1st,2017");
     msgBox.exec();
 }
