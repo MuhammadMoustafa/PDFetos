@@ -49,6 +49,7 @@ private:
     Ui::MainWindow *ui;
     QStringList imagesPaths;
     QStringListModel *model;
+    QString outputFilePath;
 
 };
 

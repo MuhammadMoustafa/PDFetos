@@ -17,6 +17,9 @@ MainWindow::MainWindow(QWidget *parent) :
     ui->dspnbox_height->setDisabled(true);
     ui->dspnbox_width->setDisabled(true);
     qApp->installEventFilter(this);
+
+    outputFilePath = "";
+
 }
 
 MainWindow::~MainWindow()
@@ -78,13 +81,13 @@ void MainWindow::on_btn_addImage_clicked()
 void MainWindow::on_btn_convert2pdf_clicked()
 {
 
-    QString fileName = QFileDialog::getSaveFileName(this, tr("Save File"), fileName, tr("pdf files (*.pdf)"));
+    outputFilePath = QFileDialog::getSaveFileName(this, tr("Save File"), outputFilePath, tr("pdf files (*.pdf)"));
 
-    if (!fileName.isEmpty()){
+    if (!outputFilePath.isEmpty()){
         QPrinter printer(QPrinter::HighResolution);
 
         printer.setOutputFormat(QPrinter::PdfFormat);
-        printer.setOutputFileName(fileName);
+        printer.setOutputFileName(outputFilePath);
         QPainter painter;
         painter.begin(&printer);
 
@@ -92,10 +95,10 @@ void MainWindow::on_btn_convert2pdf_clicked()
 
             QPixmap pixmap(imagesPaths[i]);
 
-            float start_point_x = 2480* (3.85 - ui->dspnbox_width->value()) / 2.0;
-            float start_point_y = 3508* (3.95 - ui->dspnbox_height->value()) / 2.0;
+            int start_point_x = 2480* (3.85 - ui->dspnbox_width->value()) / 2;
+            int start_point_y = 3508* (3.95 - ui->dspnbox_height->value()) / 2;
 
-            painter.drawPixmap(QRect(start_point_x, start_point_y, ui->dspnbox_width->value()*2480, ui->dspnbox_height->value()*3508), pixmap);
+            painter.drawPixmap(QRect(start_point_x, start_point_y, int(ui->dspnbox_width->value()*2480), int(ui->dspnbox_height->value()*3508)), pixmap);
 
             ui->statusBar->showMessage("Pdf File Created Successfully", 5000);
 
@@ -117,7 +120,7 @@ void MainWindow::on_btn_convert2pdf_clicked()
         int ret = msgBox.exec();
 
         if(ret == QMessageBox::Open){
-            QDesktopServices::openUrl(QUrl(fileName, QUrl::TolerantMode));
+            QDesktopServices::openUrl(QUrl(outputFilePath, QUrl::TolerantMode));
         }
     }
 }
