@@ -4,7 +4,7 @@
 #
 #-------------------------------------------------
 
-QT       += core gui printsupport
+QT       += core gui printsupport xml
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
@@ -32,3 +32,5 @@ HEADERS += \
 
 FORMS += \
         mainwindow.ui
+
+RC_FILE = myapp.rc

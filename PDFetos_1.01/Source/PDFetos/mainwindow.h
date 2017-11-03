@@ -11,6 +11,8 @@
 #include <QInputDialog>
 #include <QDesktopServices>
 #include <QKeyEvent>
+#include <QtXml>
+#include <QFile>
 
 namespace Ui {
 class MainWindow;
@@ -24,6 +26,7 @@ public:
     explicit MainWindow(QWidget *parent = 0);
     ~MainWindow();
     void on_start();
+    int parse_xml();
 
 private slots:
     void on_btn_addImage_clicked();
@@ -50,7 +53,6 @@ private:
     QStringList imagesPaths;
     QStringListModel *model;
     QString outputFilePath;
-
 };
 
 #endif // MAINWINDOW_H

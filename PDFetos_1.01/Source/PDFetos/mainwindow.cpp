@@ -7,6 +7,7 @@ MainWindow::MainWindow(QWidget *parent) :
     ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
+    this->setWindowTitle("PDFetos");
     ui->statusBar->setStyleSheet("color: red");
     model = new QStringListModel(this);
     ui->btn_convert2pdf->setDisabled(true);
@@ -208,6 +209,32 @@ void MainWindow::on_actionExit_triggered()
 void MainWindow::on_actionAbout_triggered()
 {
     on_start();
+}
+
+int MainWindow::parse_xml()
+{
+    QDomDocument xmldom;
+
+    QFile file("pdfetos.xml");
+    int current = 0;
+
+    if (file.open(QIODevice::ReadOnly	 | QIODevice::Text)){
+        xmldom.setContent(&file);
+        file.close();
+
+        current = xmldom.firstChildElement().firstChildElement().attribute("count").toInt();
+        xmldom.firstChildElement().firstChildElement().setAttribute("count", (current + 1)% 10);
+
+        if (file.open(QIODevice::Truncate | QIODevice::WriteOnly)){
+            QByteArray xml = xmldom.toByteArray();
+            file.write(xml);
+            file.close();
+        }
+    }
+    else{
+        ui->statusBar->showMessage("Openeing XML file failed.", 2000);
+    }
+    return current;
 }
 
 void MainWindow::on_start()

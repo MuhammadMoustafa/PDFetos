@@ -210,6 +210,7 @@ Makefile: ../PDFetos/PDFetos.pro E:/Programs/Windows/sPrograms/Qt/5.9.1/mingw53_
 		E:/Programs/Windows/sPrograms/Qt/5.9.1/mingw53_32/mkspecs/features/qt_config.prf \
 		E:/Programs/Windows/sPrograms/Qt/5.9.1/mingw53_32/mkspecs/win32-g++/qmake.conf \
 		E:/Programs/Windows/sPrograms/Qt/5.9.1/mingw53_32/mkspecs/features/spec_post.prf \
+		.qmake.stash \
 		E:/Programs/Windows/sPrograms/Qt/5.9.1/mingw53_32/mkspecs/features/exclusive_builds.prf \
 		E:/Programs/Windows/sPrograms/Qt/5.9.1/mingw53_32/mkspecs/features/toolchain.prf \
 		E:/Programs/Windows/sPrograms/Qt/5.9.1/mingw53_32/mkspecs/features/default_pre.prf \
@@ -237,6 +238,7 @@ Makefile: ../PDFetos/PDFetos.pro E:/Programs/Windows/sPrograms/Qt/5.9.1/mingw53_
 		E:/Programs/Windows/sPrograms/Qt/5.9.1/mingw53_32/lib/Qt5PrintSupport.prl \
 		E:/Programs/Windows/sPrograms/Qt/5.9.1/mingw53_32/lib/Qt5Widgets.prl \
 		E:/Programs/Windows/sPrograms/Qt/5.9.1/mingw53_32/lib/Qt5Gui.prl \
+		E:/Programs/Windows/sPrograms/Qt/5.9.1/mingw53_32/lib/Qt5Xml.prl \
 		E:/Programs/Windows/sPrograms/Qt/5.9.1/mingw53_32/lib/Qt5Core.prl
 	$(QMAKE) -o Makefile ../PDFetos/PDFetos.pro -spec win32-g++ CONFIG+=debug CONFIG+=qml_debug
 E:/Programs/Windows/sPrograms/Qt/5.9.1/mingw53_32/mkspecs/features/spec_pre.prf:
@@ -388,6 +390,7 @@ E:/Programs/Windows/sPrograms/Qt/5.9.1/mingw53_32/mkspecs/features/qt_functions.
 E:/Programs/Windows/sPrograms/Qt/5.9.1/mingw53_32/mkspecs/features/qt_config.prf:
 E:/Programs/Windows/sPrograms/Qt/5.9.1/mingw53_32/mkspecs/win32-g++/qmake.conf:
 E:/Programs/Windows/sPrograms/Qt/5.9.1/mingw53_32/mkspecs/features/spec_post.prf:
+.qmake.stash:
 E:/Programs/Windows/sPrograms/Qt/5.9.1/mingw53_32/mkspecs/features/exclusive_builds.prf:
 E:/Programs/Windows/sPrograms/Qt/5.9.1/mingw53_32/mkspecs/features/toolchain.prf:
 E:/Programs/Windows/sPrograms/Qt/5.9.1/mingw53_32/mkspecs/features/default_pre.prf:
@@ -415,6 +418,7 @@ E:/Programs/Windows/sPrograms/Qt/5.9.1/mingw53_32/lib/qtmaind.prl:
 E:/Programs/Windows/sPrograms/Qt/5.9.1/mingw53_32/lib/Qt5PrintSupport.prl:
 E:/Programs/Windows/sPrograms/Qt/5.9.1/mingw53_32/lib/Qt5Widgets.prl:
 E:/Programs/Windows/sPrograms/Qt/5.9.1/mingw53_32/lib/Qt5Gui.prl:
+E:/Programs/Windows/sPrograms/Qt/5.9.1/mingw53_32/lib/Qt5Xml.prl:
 E:/Programs/Windows/sPrograms/Qt/5.9.1/mingw53_32/lib/Qt5Core.prl:
 qmake: FORCE
 	@$(QMAKE) -o Makefile ../PDFetos/PDFetos.pro -spec win32-g++ CONFIG+=debug CONFIG+=qml_debug
