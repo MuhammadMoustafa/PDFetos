@@ -20,6 +20,7 @@ MainWindow::MainWindow(QWidget *parent) :
     qApp->installEventFilter(this);
 
     outputFilePath = "";
+    imageFilePath = "";
 
 }
 
@@ -56,11 +57,12 @@ bool MainWindow::eventFilter(QObject *obj, QEvent *event){
 void MainWindow::on_btn_addImage_clicked()
 {
 
-    QStringList paths = QFileDialog::getOpenFileNames(this,tr("Browse for Images"), "", tr("Image Files (*.png *.jpg *.bmp)"));
+    QStringList paths = QFileDialog::getOpenFileNames(this,tr("Browse for Images"), imageFilePath, tr("Image Files (*.png *.jpg *.bmp)"));
 
     if(!paths.isEmpty()){
 
         imagesPaths.append(paths);
+        imageFilePath = imagesPaths.last();
         imagesPaths.sort();
         model->setStringList(imagesPaths);
         ui->listview_images->setModel(model);
@@ -194,6 +196,8 @@ void MainWindow::on_btn_removeimage_clicked()
             ui->btn_imageup->setDisabled(true);
             ui->btn_removeimage->setDisabled(true);
             ui->btn_removeall->setDisabled(true);
+            ui->dspnbox_height->setDisabled(true);
+            ui->dspnbox_width->setDisabled(true);
         }
     }
     else if(index == -1){

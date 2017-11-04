@@ -53,6 +53,7 @@ private:
     QStringList imagesPaths;
     QStringListModel *model;
     QString outputFilePath;
+    QString imageFilePath;
 };
 
 #endif // MAINWINDOW_H

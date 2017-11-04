@@ -47,7 +47,6 @@ public:
     QPushButton *btn_removeall;
     QVBoxLayout *verticalLayout_2;
     QLabel *label_5;
-    QLabel *label_6;
     QLabel *label_4;
     QLabel *label;
     QLabel *label_2;
@@ -138,13 +137,6 @@ public:
         label_5->setFont(font);
 
         verticalLayout_2->addWidget(label_5);
-
-        label_6 = new QLabel(centralWidget);
-        label_6->setObjectName(QStringLiteral("label_6"));
-        sizePolicy.setHeightForWidth(label_6->sizePolicy().hasHeightForWidth());
-        label_6->setSizePolicy(sizePolicy);
-
-        verticalLayout_2->addWidget(label_6);
 
         label_4 = new QLabel(centralWidget);
         label_4->setObjectName(QStringLiteral("label_4"));
@@ -284,7 +276,6 @@ public:
         btn_removeimage->setText(QApplication::translate("MainWindow", "Remove Image (backspace)", Q_NULLPTR));
         btn_removeall->setText(QApplication::translate("MainWindow", "Remove All (delete)", Q_NULLPTR));
         label_5->setText(QApplication::translate("MainWindow", "Paper Properties", Q_NULLPTR));
-        label_6->setText(QString());
         label_4->setText(QApplication::translate("MainWindow", "Please choose  a value from 0 to 4", Q_NULLPTR));
         label->setText(QApplication::translate("MainWindow", "We Recommend:", Q_NULLPTR));
         label_2->setText(QApplication::translate("MainWindow", "For a Full Screen Page .... width=3.85 Height = 3.95", Q_NULLPTR));

@@ -1175,52 +1175,7 @@ debug/mainwindow.o: ../PDFetos/mainwindow.cpp ../PDFetos/mainwindow.h \
 		E:/Programs/Windows/sPrograms/Qt/5.9.1/mingw53_32/include/QtXml/qxml.h \
 		E:/Programs/Windows/sPrograms/Qt/5.9.1/mingw53_32/include/QtXml/qtxmlversion.h \
 		E:/Programs/Windows/sPrograms/Qt/5.9.1/mingw53_32/include/QtCore/QFile \
-		ui_mainwindow.h \
-		E:/Programs/Windows/sPrograms/Qt/5.9.1/mingw53_32/include/QtCore/QVariant \
-		E:/Programs/Windows/sPrograms/Qt/5.9.1/mingw53_32/include/QtWidgets/QAction \
-		E:/Programs/Windows/sPrograms/Qt/5.9.1/mingw53_32/include/QtWidgets/qaction.h \
-		E:/Programs/Windows/sPrograms/Qt/5.9.1/mingw53_32/include/QtWidgets/qactiongroup.h \
-		E:/Programs/Windows/sPrograms/Qt/5.9.1/mingw53_32/include/QtWidgets/QApplication \
-		E:/Programs/Windows/sPrograms/Qt/5.9.1/mingw53_32/include/QtWidgets/qapplication.h \
-		E:/Programs/Windows/sPrograms/Qt/5.9.1/mingw53_32/include/QtWidgets/qdesktopwidget.h \
-		E:/Programs/Windows/sPrograms/Qt/5.9.1/mingw53_32/include/QtWidgets/QButtonGroup \
-		E:/Programs/Windows/sPrograms/Qt/5.9.1/mingw53_32/include/QtWidgets/qbuttongroup.h \
-		E:/Programs/Windows/sPrograms/Qt/5.9.1/mingw53_32/include/QtWidgets/QDoubleSpinBox \
-		E:/Programs/Windows/sPrograms/Qt/5.9.1/mingw53_32/include/QtWidgets/qspinbox.h \
-		E:/Programs/Windows/sPrograms/Qt/5.9.1/mingw53_32/include/QtWidgets/qabstractspinbox.h \
-		E:/Programs/Windows/sPrograms/Qt/5.9.1/mingw53_32/include/QtWidgets/QHBoxLayout \
-		E:/Programs/Windows/sPrograms/Qt/5.9.1/mingw53_32/include/QtWidgets/qboxlayout.h \
-		E:/Programs/Windows/sPrograms/Qt/5.9.1/mingw53_32/include/QtWidgets/qlayout.h \
-		E:/Programs/Windows/sPrograms/Qt/5.9.1/mingw53_32/include/QtWidgets/qlayoutitem.h \
-		E:/Programs/Windows/sPrograms/Qt/5.9.1/mingw53_32/include/QtWidgets/qgridlayout.h \
-		E:/Programs/Windows/sPrograms/Qt/5.9.1/mingw53_32/include/QtWidgets/QHeaderView \
-		E:/Programs/Windows/sPrograms/Qt/5.9.1/mingw53_32/include/QtWidgets/qheaderview.h \
-		E:/Programs/Windows/sPrograms/Qt/5.9.1/mingw53_32/include/QtWidgets/qabstractitemview.h \
-		E:/Programs/Windows/sPrograms/Qt/5.9.1/mingw53_32/include/QtWidgets/qabstractscrollarea.h \
-		E:/Programs/Windows/sPrograms/Qt/5.9.1/mingw53_32/include/QtWidgets/qabstractitemdelegate.h \
-		E:/Programs/Windows/sPrograms/Qt/5.9.1/mingw53_32/include/QtWidgets/qstyleoption.h \
-		E:/Programs/Windows/sPrograms/Qt/5.9.1/mingw53_32/include/QtWidgets/qslider.h \
-		E:/Programs/Windows/sPrograms/Qt/5.9.1/mingw53_32/include/QtWidgets/qabstractslider.h \
-		E:/Programs/Windows/sPrograms/Qt/5.9.1/mingw53_32/include/QtWidgets/qstyle.h \
-		E:/Programs/Windows/sPrograms/Qt/5.9.1/mingw53_32/include/QtWidgets/qtabbar.h \
-		E:/Programs/Windows/sPrograms/Qt/5.9.1/mingw53_32/include/QtWidgets/qrubberband.h \
-		E:/Programs/Windows/sPrograms/Qt/5.9.1/mingw53_32/include/QtWidgets/QLabel \
-		E:/Programs/Windows/sPrograms/Qt/5.9.1/mingw53_32/include/QtWidgets/qlabel.h \
-		E:/Programs/Windows/sPrograms/Qt/5.9.1/mingw53_32/include/QtWidgets/QListView \
-		E:/Programs/Windows/sPrograms/Qt/5.9.1/mingw53_32/include/QtWidgets/qlistview.h \
-		E:/Programs/Windows/sPrograms/Qt/5.9.1/mingw53_32/include/QtWidgets/QMenu \
-		E:/Programs/Windows/sPrograms/Qt/5.9.1/mingw53_32/include/QtWidgets/qmenu.h \
-		E:/Programs/Windows/sPrograms/Qt/5.9.1/mingw53_32/include/QtWidgets/QMenuBar \
-		E:/Programs/Windows/sPrograms/Qt/5.9.1/mingw53_32/include/QtWidgets/qmenubar.h \
-		E:/Programs/Windows/sPrograms/Qt/5.9.1/mingw53_32/include/QtWidgets/QPushButton \
-		E:/Programs/Windows/sPrograms/Qt/5.9.1/mingw53_32/include/QtWidgets/qpushbutton.h \
-		E:/Programs/Windows/sPrograms/Qt/5.9.1/mingw53_32/include/QtWidgets/qabstractbutton.h \
-		E:/Programs/Windows/sPrograms/Qt/5.9.1/mingw53_32/include/QtWidgets/QStatusBar \
-		E:/Programs/Windows/sPrograms/Qt/5.9.1/mingw53_32/include/QtWidgets/qstatusbar.h \
-		E:/Programs/Windows/sPrograms/Qt/5.9.1/mingw53_32/include/QtWidgets/QToolBar \
-		E:/Programs/Windows/sPrograms/Qt/5.9.1/mingw53_32/include/QtWidgets/qtoolbar.h \
-		E:/Programs/Windows/sPrograms/Qt/5.9.1/mingw53_32/include/QtWidgets/QVBoxLayout \
-		E:/Programs/Windows/sPrograms/Qt/5.9.1/mingw53_32/include/QtWidgets/QWidget
+		ui_mainwindow.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o debug/mainwindow.o ../PDFetos/mainwindow.cpp
 
 debug/moc_mainwindow.o: debug/moc_mainwindow.cpp 
