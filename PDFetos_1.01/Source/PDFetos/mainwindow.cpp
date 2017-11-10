@@ -256,6 +256,6 @@ void MainWindow::on_start()
                    "If you want to have fun you may visit<br>"
                    "<a href='https://www.facebook.com/Cartera11/?ref=br_rs'>https://www.facebook.com/Cartera11/?ref=br_rs</a><br><br><br>"
                    "For more updates please visit <a href='https://github.com/MuhammadMoustafa/PDFetos'>https://github.com/MuhammadMoustafa/PDFetos</a><br><br><br>"
-                   "Your Current Verion is 1.01 .... Released On Novemver 1st,2017");
+                   "This Verion is v1.0 .... Released On Novemver 11, 2017");
     msgBox.exec();
 }

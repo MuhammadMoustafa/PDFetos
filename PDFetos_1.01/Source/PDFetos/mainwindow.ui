@@ -27,7 +27,7 @@
           <item>
            <widget class="QPushButton" name="btn_addImage">
             <property name="text">
-             <string>Add Images (Ctrl + O)</string>
+             <string>Add Images</string>
             </property>
            </widget>
           </item>

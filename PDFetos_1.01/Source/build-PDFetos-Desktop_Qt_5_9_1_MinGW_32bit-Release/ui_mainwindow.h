@@ -270,7 +270,7 @@ public:
 #ifndef QT_NO_SHORTCUT
         actionExit->setShortcut(QApplication::translate("MainWindow", "F12", Q_NULLPTR));
 #endif // QT_NO_SHORTCUT
-        btn_addImage->setText(QApplication::translate("MainWindow", "Add Images (Ctrl + O)", Q_NULLPTR));
+        btn_addImage->setText(QApplication::translate("MainWindow", "Add Images", Q_NULLPTR));
         btn_imageup->setText(QApplication::translate("MainWindow", "Image Up (Shift)", Q_NULLPTR));
         btn_imagedown->setText(QApplication::translate("MainWindow", "Image Down (Ctrl)", Q_NULLPTR));
         btn_removeimage->setText(QApplication::translate("MainWindow", "Remove Image (backspace)", Q_NULLPTR));
